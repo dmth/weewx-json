@@ -55,52 +55,52 @@
         "inside humidity": {"value": $current.inHumidity.raw, "units": "$current.inHumidity.format(" ").lstrip()"},
         #end if
         #if $current.extraTemp1.has_data
-        "extraTemp1": {"value": $current.extraTemp1.raw, "units": "$current.extraTemp1.format(" ").lstrip()"},
+        "$obs.label.extraTemp1": {"value": $current.extraTemp1.raw, "units": "$current.extraTemp1.format(" ").lstrip()"},
         #end if
         #if $current.extraHumid1.has_data
-        "extraHumid1": {"value": $current.extraHumid1.raw, "units": "$current.extraHumid1.format(" ").lstrip()"},
+        "$obs.label.extraHumid1": {"value": $current.extraHumid1.raw, "units": "$current.extraHumid1.format(" ").lstrip()"},
         #end if
         #if $current.extraTemp2.has_data
-        "extraTemp2": {"value": $current.extraTemp2.raw, "units": "$current.extraTemp2.format(" ").lstrip()"},
+        "$obs.label.extraTemp2": {"value": $current.extraTemp2.raw, "units": "$current.extraTemp2.format(" ").lstrip()"},
         #end if
         #if $current.extraHumid2.has_data
-        "extraHumid2": {"value": $current.extraHumid2.raw, "units": "$current.extraHumid2.format(" ").lstrip()"},
+        "$obs.label.extraHumid2": {"value": $current.extraHumid2.raw, "units": "$current.extraHumid2.format(" ").lstrip()"},
         #end if
         #if $current.extraTemp3.has_data
-        "extraTemp3": {"value": $current.extraTemp3.raw, "units": "$current.extraTemp3.format(" ").lstrip()"},
+        "$obs.label.extraTemp3": {"value": $current.extraTemp3.raw, "units": "$current.extraTemp3.format(" ").lstrip()"},
         #end if
         #if $current.extraHumid3.has_data
-        "extraHumid3": {"value": $current.extraHumid3.raw, "units": "$current.extraHumid3.format(" ").lstrip()"},
+        "$obs.label.extraHumid3": {"value": $current.extraHumid3.raw, "units": "$current.extraHumid3.format(" ").lstrip()"},
         #end if
         #if $current.extraTemp4.has_data
-        "extraTemp4": {"value": $current.extraTemp4.raw, "units": "$current.extraTemp4.format(" ").lstrip()"},
+        "$obs.label.extraTemp4": {"value": $current.extraTemp4.raw, "units": "$current.extraTemp4.format(" ").lstrip()"},
         #end if
         #if $current.extraHumid4.has_data
-        "extraHumid4": {"value": $current.extraHumid4.raw, "units": "$current.extraHumid4.format(" ").lstrip()"},
+        "$obs.label.extraHumid4": {"value": $current.extraHumid4.raw, "units": "$current.extraHumid4.format(" ").lstrip()"},
         #end if
         #if $current.extraTemp5.has_data
-        "extraTemp5": {"value": $current.extraTemp5.raw, "units": "$current.extraTemp5.format(" ").lstrip()"},
+        "$obs.label.extraTemp5": {"value": $current.extraTemp5.raw, "units": "$current.extraTemp5.format(" ").lstrip()"},
         #end if
         #if $current.extraHumid5.has_data
-        "extraHumid5": {"value": $current.extraHumid5.raw, "units": "$current.extraHumid5.format(" ").lstrip()"},
+        "$obs.label.extraHumid5": {"value": $current.extraHumid5.raw, "units": "$current.extraHumid5.format(" ").lstrip()"},
         #end if
         #if $current.extraTemp6.has_data
-        "extraTemp6": {"value": $current.extraTemp6.raw, "units": "$current.extraTemp6.format(" ").lstrip()"},
+        "$obs.label.extraTemp6": {"value": $current.extraTemp6.raw, "units": "$current.extraTemp6.format(" ").lstrip()"},
         #end if
         #if $current.extraHumid6.has_data
-        "extraHumid6": {"value": $current.extraHumid6.raw, "units": "$current.extraHumid6.format(" ").lstrip()"},
+        "$obs.label.extraHumid6": {"value": $current.extraHumid6.raw, "units": "$current.extraHumid6.format(" ").lstrip()"},
         #end if
         #if $current.extraTemp7.has_data
-        "extraTemp7": {"value": $current.extraTemp7.raw, "units": "$current.extraTemp7.format(" ").lstrip()"},
+        "$obs.label.extraTemp7": {"value": $current.extraTemp7.raw, "units": "$current.extraTemp7.format(" ").lstrip()"},
         #end if
         #if $current.extraHumid7.has_data
-        "extraHumid7": {"value": $current.extraHumid7.raw, "units": "$current.extraHumid7.format(" ").lstrip()"},
+        "$obs.label.extraHumid7": {"value": $current.extraHumid7.raw, "units": "$current.extraHumid7.format(" ").lstrip()"},
         #end if
         #if $current.extraTemp8.has_data
-        "extraTemp8": {"value": $current.extraTemp8.raw, "units": "$current.extraTemp8.format(" ").lstrip()"},
+        "$obs.label.extraTemp8": {"value": $current.extraTemp8.raw, "units": "$current.extraTemp8.format(" ").lstrip()"},
         #end if
         #if $current.extraHumid8.has_data
-        "extraHumid8": {"value": $current.extraHumid8.raw, "units": "$current.extraHumid8.format(" ").lstrip()"},
+        "$obs.label.extraHumid8": {"value": $current.extraHumid8.raw, "units": "$current.extraHumid8.format(" ").lstrip()"},
         #end if
         ## Last value can't end with a comma
         "void_end": null
@@ -144,68 +144,68 @@
         "min inside humidity": {"value": $day.inHumidity.min.raw, "units": "$day.inHumidity.min.format(" ").lstrip()", "at": "$day.inHumidity.mintime"},
         #end if
         #if $day.extraTemp1.has_data
-        "max extraTemp1": {"value": $day.extraTemp1.max.raw, "units": "$day.extraTemp1.max.format(" ").lstrip()", "at": "$day.extraTemp1.maxtime"},
-        "min extraTemp1": {"value": $day.extraTemp1.min.raw, "units": "$day.extraTemp1.min.format(" ").lstrip()", "at": "$day.extraTemp1.mintime"},
+        "max $obs.label.extraTemp1": {"value": $day.extraTemp1.max.raw, "units": "$day.extraTemp1.max.format(" ").lstrip()", "at": "$day.extraTemp1.maxtime"},
+        "min $obs.label.extraTemp1": {"value": $day.extraTemp1.min.raw, "units": "$day.extraTemp1.min.format(" ").lstrip()", "at": "$day.extraTemp1.mintime"},
         #end if
         #if $day.extraHumid1.has_data
-        "max extraHumid1": {"value": $day.extraHumid1.max.raw, "units": "$day.extraHumid1.max.format(" ").lstrip()", "at": "$day.extraHumid1.maxtime"},
-        "min extraHumid1": {"value": $day.extraHumid1.min.raw, "units": "$day.extraHumid1.min.format(" ").lstrip()", "at": "$day.extraHumid1.mintime"},
+        "max $obs.label.extraHumid1": {"value": $day.extraHumid1.max.raw, "units": "$day.extraHumid1.max.format(" ").lstrip()", "at": "$day.extraHumid1.maxtime"},
+        "min $obs.label.extraHumid1": {"value": $day.extraHumid1.min.raw, "units": "$day.extraHumid1.min.format(" ").lstrip()", "at": "$day.extraHumid1.mintime"},
         #end if
         #if $day.extraTemp2.has_data
-        "max extraTemp2": {"value": $day.extraTemp2.max.raw, "units": "$day.extraTemp2.max.format(" ").lstrip()", "at": "$day.extraTemp2.maxtime"},
-        "min extraTemp2": {"value": $day.extraTemp2.min.raw, "units": "$day.extraTemp2.min.format(" ").lstrip()", "at": "$day.extraTemp2.mintime"},
+        "max $obs.label.extraTemp2": {"value": $day.extraTemp2.max.raw, "units": "$day.extraTemp2.max.format(" ").lstrip()", "at": "$day.extraTemp2.maxtime"},
+        "min $obs.label.extraTemp2": {"value": $day.extraTemp2.min.raw, "units": "$day.extraTemp2.min.format(" ").lstrip()", "at": "$day.extraTemp2.mintime"},
         #end if
         #if $day.extraHumid2.has_data
-        "max extraHumid2": {"value": $day.extraHumid2.max.raw, "units": "$day.extraHumid2.max.format(" ").lstrip()", "at": "$day.extraHumid2.maxtime"},
-        "min extraHumid2": {"value": $day.extraHumid2.min.raw, "units": "$day.extraHumid2.min.format(" ").lstrip()", "at": "$day.extraHumid2.mintime"},
+        "max $obs.label.extraHumid2": {"value": $day.extraHumid2.max.raw, "units": "$day.extraHumid2.max.format(" ").lstrip()", "at": "$day.extraHumid2.maxtime"},
+        "min $obs.label.extraHumid2": {"value": $day.extraHumid2.min.raw, "units": "$day.extraHumid2.min.format(" ").lstrip()", "at": "$day.extraHumid2.mintime"},
         #end if
         #if $day.extraTemp3.has_data
-        "max extraTemp3": {"value": $day.extraTemp3.max.raw, "units": "$day.extraTemp3.max.format(" ").lstrip()", "at": "$day.extraTemp3.maxtime"},
-        "min extraTemp3": {"value": $day.extraTemp3.min.raw, "units": "$day.extraTemp3.min.format(" ").lstrip()", "at": "$day.extraTemp3.mintime"},
+        "max $obs.label.extraTemp3": {"value": $day.extraTemp3.max.raw, "units": "$day.extraTemp3.max.format(" ").lstrip()", "at": "$day.extraTemp3.maxtime"},
+        "min $obs.label.extraTemp3": {"value": $day.extraTemp3.min.raw, "units": "$day.extraTemp3.min.format(" ").lstrip()", "at": "$day.extraTemp3.mintime"},
         #end if
         #if $day.extraHumid3.has_data
-        "max extraHumid3": {"value": $day.extraHumid3.max.raw, "units": "$day.extraHumid3.max.format(" ").lstrip()", "at": "$day.extraHumid3.maxtime"},
-        "min extraHumid3": {"value": $day.extraHumid3.min.raw, "units": "$day.extraHumid3.min.format(" ").lstrip()", "at": "$day.extraHumid3.mintime"},
+        "max $obs.label.extraHumid3": {"value": $day.extraHumid3.max.raw, "units": "$day.extraHumid3.max.format(" ").lstrip()", "at": "$day.extraHumid3.maxtime"},
+        "min $obs.label.extraHumid3": {"value": $day.extraHumid3.min.raw, "units": "$day.extraHumid3.min.format(" ").lstrip()", "at": "$day.extraHumid3.mintime"},
         #end if
         #if $day.extraTemp4.has_data
-        "max extraTemp4": {"value": $day.extraTemp4.max.raw, "units": "$day.extraTemp4.max.format(" ").lstrip()", "at": "$day.extraTemp4.maxtime"},
-        "min extraTemp4": {"value": $day.extraTemp4.min.raw, "units": "$day.extraTemp4.min.format(" ").lstrip()", "at": "$day.extraTemp4.mintime"},
+        "max $obs.label.extraTemp4": {"value": $day.extraTemp4.max.raw, "units": "$day.extraTemp4.max.format(" ").lstrip()", "at": "$day.extraTemp4.maxtime"},
+        "min $obs.label.extraTemp4": {"value": $day.extraTemp4.min.raw, "units": "$day.extraTemp4.min.format(" ").lstrip()", "at": "$day.extraTemp4.mintime"},
         #end if
         #if $day.extraHumid4.has_data
-        "max extraHumid4": {"value": $day.extraHumid4.max.raw, "units": "$day.extraHumid4.max.format(" ").lstrip()", "at": "$day.extraHumid4.maxtime"},
-        "min extraHumid4": {"value": $day.extraHumid4.min.raw, "units": "$day.extraHumid4.min.format(" ").lstrip()", "at": "$day.extraHumid4.mintime"},
+        "max $obs.label.extraHumid4": {"value": $day.extraHumid4.max.raw, "units": "$day.extraHumid4.max.format(" ").lstrip()", "at": "$day.extraHumid4.maxtime"},
+        "min $obs.label.extraHumid4": {"value": $day.extraHumid4.min.raw, "units": "$day.extraHumid4.min.format(" ").lstrip()", "at": "$day.extraHumid4.mintime"},
         #end if
         #if $day.extraTemp5.has_data
-        "max extraTemp5": {"value": $day.extraTemp5.max.raw, "units": "$day.extraTemp5.max.format(" ").lstrip()", "at": "$day.extraTemp5.maxtime"},
-        "min extraTemp5": {"value": $day.extraTemp5.min.raw, "units": "$day.extraTemp5.min.format(" ").lstrip()", "at": "$day.extraTemp5.mintime"},
+        "max $obs.label.extraTemp5": {"value": $day.extraTemp5.max.raw, "units": "$day.extraTemp5.max.format(" ").lstrip()", "at": "$day.extraTemp5.maxtime"},
+        "min $obs.label.extraTemp5": {"value": $day.extraTemp5.min.raw, "units": "$day.extraTemp5.min.format(" ").lstrip()", "at": "$day.extraTemp5.mintime"},
         #end if
         #if $day.extraHumid5.has_data
-        "max extraHumid5": {"value": $day.extraHumid5.max.raw, "units": "$day.extraHumid5.max.format(" ").lstrip()", "at": "$day.extraHumid5.maxtime"},
-        "min extraHumid5": {"value": $day.extraHumid5.min.raw, "units": "$day.extraHumid5.min.format(" ").lstrip()", "at": "$day.extraHumid5.mintime"},
+        "max $obs.label.extraHumid5": {"value": $day.extraHumid5.max.raw, "units": "$day.extraHumid5.max.format(" ").lstrip()", "at": "$day.extraHumid5.maxtime"},
+        "min $obs.label.extraHumid5": {"value": $day.extraHumid5.min.raw, "units": "$day.extraHumid5.min.format(" ").lstrip()", "at": "$day.extraHumid5.mintime"},
         #end if
         #if $day.extraTemp6.has_data
-        "max extraTemp6": {"value": $day.extraTemp6.max.raw, "units": "$day.extraTemp6.max.format(" ").lstrip()", "at": "$day.extraTemp6.maxtime"},
-        "min extraTemp6": {"value": $day.extraTemp6.min.raw, "units": "$day.extraTemp6.min.format(" ").lstrip()", "at": "$day.extraTemp6.mintime"},
+        "max $obs.label.extraTemp6": {"value": $day.extraTemp6.max.raw, "units": "$day.extraTemp6.max.format(" ").lstrip()", "at": "$day.extraTemp6.maxtime"},
+        "min $obs.label.extraTemp6": {"value": $day.extraTemp6.min.raw, "units": "$day.extraTemp6.min.format(" ").lstrip()", "at": "$day.extraTemp6.mintime"},
         #end if
         #if $day.extraHumid6.has_data
-        "max extraHumid6": {"value": $day.extraHumid6.max.raw, "units": "$day.extraHumid6.max.format(" ").lstrip()", "at": "$day.extraHumid6.maxtime"},
-        "min extraHumid6": {"value": $day.extraHumid6.min.raw, "units": "$day.extraHumid6.min.format(" ").lstrip()", "at": "$day.extraHumid6.mintime"},
+        "max $obs.label.extraHumid6": {"value": $day.extraHumid6.max.raw, "units": "$day.extraHumid6.max.format(" ").lstrip()", "at": "$day.extraHumid6.maxtime"},
+        "min $obs.label.extraHumid6": {"value": $day.extraHumid6.min.raw, "units": "$day.extraHumid6.min.format(" ").lstrip()", "at": "$day.extraHumid6.mintime"},
         #end if
         #if $day.extraTemp7.has_data
-        "max extraTemp7": {"value": $day.extraTemp7.max.raw, "units": "$day.extraTemp7.max.format(" ").lstrip()", "at": "$day.extraTemp7.maxtime"},
-        "min extraTemp7": {"value": $day.extraTemp7.min.raw, "units": "$day.extraTemp7.min.format(" ").lstrip()", "at": "$day.extraTemp7.mintime"},
+        "max $obs.label.extraTemp7": {"value": $day.extraTemp7.max.raw, "units": "$day.extraTemp7.max.format(" ").lstrip()", "at": "$day.extraTemp7.maxtime"},
+        "min $obs.label.extraTemp7": {"value": $day.extraTemp7.min.raw, "units": "$day.extraTemp7.min.format(" ").lstrip()", "at": "$day.extraTemp7.mintime"},
         #end if
         #if $day.extraHumid7.has_data
-        "max extraHumid7": {"value": $day.extraHumid7.max.raw, "units": "$day.extraHumid7.max.format(" ").lstrip()", "at": "$day.extraHumid7.maxtime"},
-        "min extraHumid7": {"value": $day.extraHumid7.min.raw, "units": "$day.extraHumid7.min.format(" ").lstrip()", "at": "$day.extraHumid7.mintime"},
+        "max $obs.label.extraHumid7": {"value": $day.extraHumid7.max.raw, "units": "$day.extraHumid7.max.format(" ").lstrip()", "at": "$day.extraHumid7.maxtime"},
+        "min $obs.label.extraHumid7": {"value": $day.extraHumid7.min.raw, "units": "$day.extraHumid7.min.format(" ").lstrip()", "at": "$day.extraHumid7.mintime"},
         #end if
         #if $day.extraTemp8.has_data
-        "max extraTemp8": {"value": $day.extraTemp8.max.raw, "units": "$day.extraTemp8.max.format(" ").lstrip()", "at": "$day.extraTemp8.maxtime"},
-        "min extraTemp8": {"value": $day.extraTemp8.min.raw, "units": "$day.extraTemp8.min.format(" ").lstrip()", "at": "$day.extraTemp8.mintime"},
+        "max $obs.label.extraTemp8": {"value": $day.extraTemp8.max.raw, "units": "$day.extraTemp8.max.format(" ").lstrip()", "at": "$day.extraTemp8.maxtime"},
+        "min $obs.label.extraTemp8": {"value": $day.extraTemp8.min.raw, "units": "$day.extraTemp8.min.format(" ").lstrip()", "at": "$day.extraTemp8.mintime"},
         #end if
         #if $day.extraHumid8.has_data
-        "max extraHumid8": {"value": $day.extraHumid8.max.raw, "units": "$day.extraHumid8.max.format(" ").lstrip()", "at": "$day.extraHumid8.maxtime"},
-        "min extraHumid8": {"value": $day.extraHumid8.min.raw, "units": "$day.extraHumid8.min.format(" ").lstrip()", "at": "$day.extraHumid8.mintime"},
+        "max $obs.label.extraHumid8": {"value": $day.extraHumid8.max.raw, "units": "$day.extraHumid8.max.format(" ").lstrip()", "at": "$day.extraHumid8.maxtime"},
+        "min $obs.label.extraHumid8": {"value": $day.extraHumid8.min.raw, "units": "$day.extraHumid8.min.format(" ").lstrip()", "at": "$day.extraHumid8.mintime"},
         #end if
         ## Last value can't end with a comma
         "void_end": null
@@ -249,68 +249,68 @@
         "min inside humidity": {"value": $week.inHumidity.min.raw, "units": "$week.inHumidity.min.format(" ").lstrip()", "at": "$week.inHumidity.mintime"},
         #end if
         #if $week.extraTemp1.has_data
-        "max extraTemp1": {"value": $week.extraTemp1.max.raw, "units": "$week.extraTemp1.max.format(" ").lstrip()", "at": "$week.extraTemp1.maxtime"},
-        "min extraTemp1": {"value": $week.extraTemp1.min.raw, "units": "$week.extraTemp1.min.format(" ").lstrip()", "at": "$week.extraTemp1.mintime"},
+        "max $obs.label.extraTemp1": {"value": $week.extraTemp1.max.raw, "units": "$week.extraTemp1.max.format(" ").lstrip()", "at": "$week.extraTemp1.maxtime"},
+        "min $obs.label.extraTemp1": {"value": $week.extraTemp1.min.raw, "units": "$week.extraTemp1.min.format(" ").lstrip()", "at": "$week.extraTemp1.mintime"},
         #end if
         #if $week.extraHumid1.has_data
-        "max extraHumid1": {"value": $week.extraHumid1.max.raw, "units": "$week.extraHumid1.max.format(" ").lstrip()", "at": "$week.extraHumid1.maxtime"},
-        "min extraHumid1": {"value": $week.extraHumid1.min.raw, "units": "$week.extraHumid1.min.format(" ").lstrip()", "at": "$week.extraHumid1.mintime"},
+        "max $obs.label.extraHumid1": {"value": $week.extraHumid1.max.raw, "units": "$week.extraHumid1.max.format(" ").lstrip()", "at": "$week.extraHumid1.maxtime"},
+        "min $obs.label.extraHumid1": {"value": $week.extraHumid1.min.raw, "units": "$week.extraHumid1.min.format(" ").lstrip()", "at": "$week.extraHumid1.mintime"},
         #end if
         #if $week.extraTemp2.has_data
-        "max extraTemp2": {"value": $week.extraTemp2.max.raw, "units": "$week.extraTemp2.max.format(" ").lstrip()", "at": "$week.extraTemp2.maxtime"},
-        "min extraTemp2": {"value": $week.extraTemp2.min.raw, "units": "$week.extraTemp2.min.format(" ").lstrip()", "at": "$week.extraTemp2.mintime"},
+        "max $obs.label.extraTemp2": {"value": $week.extraTemp2.max.raw, "units": "$week.extraTemp2.max.format(" ").lstrip()", "at": "$week.extraTemp2.maxtime"},
+        "min $obs.label.extraTemp2": {"value": $week.extraTemp2.min.raw, "units": "$week.extraTemp2.min.format(" ").lstrip()", "at": "$week.extraTemp2.mintime"},
         #end if
         #if $week.extraHumid2.has_data
-        "max extraHumid2": {"value": $week.extraHumid2.max.raw, "units": "$week.extraHumid2.max.format(" ").lstrip()", "at": "$week.extraHumid2.maxtime"},
-        "min extraHumid2": {"value": $week.extraHumid2.min.raw, "units": "$week.extraHumid2.min.format(" ").lstrip()", "at": "$week.extraHumid2.mintime"},
+        "max $obs.label.extraHumid2": {"value": $week.extraHumid2.max.raw, "units": "$week.extraHumid2.max.format(" ").lstrip()", "at": "$week.extraHumid2.maxtime"},
+        "min $obs.label.extraHumid2": {"value": $week.extraHumid2.min.raw, "units": "$week.extraHumid2.min.format(" ").lstrip()", "at": "$week.extraHumid2.mintime"},
         #end if
         #if $week.extraTemp3.has_data
-        "max extraTemp3": {"value": $week.extraTemp3.max.raw, "units": "$week.extraTemp3.max.format(" ").lstrip()", "at": "$week.extraTemp3.maxtime"},
-        "min extraTemp3": {"value": $week.extraTemp3.min.raw, "units": "$week.extraTemp3.min.format(" ").lstrip()", "at": "$week.extraTemp3.mintime"},
+        "max $obs.label.extraTemp3": {"value": $week.extraTemp3.max.raw, "units": "$week.extraTemp3.max.format(" ").lstrip()", "at": "$week.extraTemp3.maxtime"},
+        "min $obs.label.extraTemp3": {"value": $week.extraTemp3.min.raw, "units": "$week.extraTemp3.min.format(" ").lstrip()", "at": "$week.extraTemp3.mintime"},
         #end if
         #if $week.extraHumid3.has_data
-        "max extraHumid3": {"value": $week.extraHumid3.max.raw, "units": "$week.extraHumid3.max.format(" ").lstrip()", "at": "$week.extraHumid3.maxtime"},
-        "min extraHumid3": {"value": $week.extraHumid3.min.raw, "units": "$week.extraHumid3.min.format(" ").lstrip()", "at": "$week.extraHumid3.mintime"},
+        "max $obs.label.extraHumid3": {"value": $week.extraHumid3.max.raw, "units": "$week.extraHumid3.max.format(" ").lstrip()", "at": "$week.extraHumid3.maxtime"},
+        "min $obs.label.extraHumid3": {"value": $week.extraHumid3.min.raw, "units": "$week.extraHumid3.min.format(" ").lstrip()", "at": "$week.extraHumid3.mintime"},
         #end if
         #if $week.extraTemp4.has_data
-        "max extraTemp4": {"value": $week.extraTemp4.max.raw, "units": "$week.extraTemp4.max.format(" ").lstrip()", "at": "$week.extraTemp4.maxtime"},
-        "min extraTemp4": {"value": $week.extraTemp4.min.raw, "units": "$week.extraTemp4.min.format(" ").lstrip()", "at": "$week.extraTemp4.mintime"},
+        "max $obs.label.extraTemp4": {"value": $week.extraTemp4.max.raw, "units": "$week.extraTemp4.max.format(" ").lstrip()", "at": "$week.extraTemp4.maxtime"},
+        "min $obs.label.extraTemp4": {"value": $week.extraTemp4.min.raw, "units": "$week.extraTemp4.min.format(" ").lstrip()", "at": "$week.extraTemp4.mintime"},
         #end if
         #if $week.extraHumid4.has_data
-        "max extraHumid4": {"value": $week.extraHumid4.max.raw, "units": "$week.extraHumid4.max.format(" ").lstrip()", "at": "$week.extraHumid4.maxtime"},
-        "min extraHumid4": {"value": $week.extraHumid4.min.raw, "units": "$week.extraHumid4.min.format(" ").lstrip()", "at": "$week.extraHumid4.mintime"},
+        "max $obs.label.extraHumid4": {"value": $week.extraHumid4.max.raw, "units": "$week.extraHumid4.max.format(" ").lstrip()", "at": "$week.extraHumid4.maxtime"},
+        "min $obs.label.extraHumid4": {"value": $week.extraHumid4.min.raw, "units": "$week.extraHumid4.min.format(" ").lstrip()", "at": "$week.extraHumid4.mintime"},
         #end if
         #if $week.extraTemp5.has_data
-        "max extraTemp5": {"value": $week.extraTemp5.max.raw, "units": "$week.extraTemp5.max.format(" ").lstrip()", "at": "$week.extraTemp5.maxtime"},
-        "min extraTemp5": {"value": $week.extraTemp5.min.raw, "units": "$week.extraTemp5.min.format(" ").lstrip()", "at": "$week.extraTemp5.mintime"},
+        "max $obs.label.extraTemp5": {"value": $week.extraTemp5.max.raw, "units": "$week.extraTemp5.max.format(" ").lstrip()", "at": "$week.extraTemp5.maxtime"},
+        "min $obs.label.extraTemp5": {"value": $week.extraTemp5.min.raw, "units": "$week.extraTemp5.min.format(" ").lstrip()", "at": "$week.extraTemp5.mintime"},
         #end if
         #if $week.extraHumid5.has_data
-        "max extraHumid5": {"value": $week.extraHumid5.max.raw, "units": "$week.extraHumid5.max.format(" ").lstrip()", "at": "$week.extraHumid5.maxtime"},
-        "min extraHumid5": {"value": $week.extraHumid5.min.raw, "units": "$week.extraHumid5.min.format(" ").lstrip()", "at": "$week.extraHumid5.mintime"},
+        "max $obs.label.extraHumid5": {"value": $week.extraHumid5.max.raw, "units": "$week.extraHumid5.max.format(" ").lstrip()", "at": "$week.extraHumid5.maxtime"},
+        "min $obs.label.extraHumid5": {"value": $week.extraHumid5.min.raw, "units": "$week.extraHumid5.min.format(" ").lstrip()", "at": "$week.extraHumid5.mintime"},
         #end if
         #if $week.extraTemp6.has_data
-        "max extraTemp6": {"value": $week.extraTemp6.max.raw, "units": "$week.extraTemp6.max.format(" ").lstrip()", "at": "$week.extraTemp6.maxtime"},
-        "min extraTemp6": {"value": $week.extraTemp6.min.raw, "units": "$week.extraTemp6.min.format(" ").lstrip()", "at": "$week.extraTemp6.mintime"},
+        "max $obs.label.extraTemp6": {"value": $week.extraTemp6.max.raw, "units": "$week.extraTemp6.max.format(" ").lstrip()", "at": "$week.extraTemp6.maxtime"},
+        "min $obs.label.extraTemp6": {"value": $week.extraTemp6.min.raw, "units": "$week.extraTemp6.min.format(" ").lstrip()", "at": "$week.extraTemp6.mintime"},
         #end if
         #if $week.extraHumid6.has_data
-        "max extraHumid6": {"value": $week.extraHumid6.max.raw, "units": "$week.extraHumid6.max.format(" ").lstrip()", "at": "$week.extraHumid6.maxtime"},
-        "min extraHumid6": {"value": $week.extraHumid6.min.raw, "units": "$week.extraHumid6.min.format(" ").lstrip()", "at": "$week.extraHumid6.mintime"},
+        "max $obs.label.extraHumid6": {"value": $week.extraHumid6.max.raw, "units": "$week.extraHumid6.max.format(" ").lstrip()", "at": "$week.extraHumid6.maxtime"},
+        "min $obs.label.extraHumid6": {"value": $week.extraHumid6.min.raw, "units": "$week.extraHumid6.min.format(" ").lstrip()", "at": "$week.extraHumid6.mintime"},
         #end if
         #if $week.extraTemp7.has_data
-        "max extraTemp7": {"value": $week.extraTemp7.max.raw, "units": "$week.extraTemp7.max.format(" ").lstrip()", "at": "$week.extraTemp7.maxtime"},
-        "min extraTemp7": {"value": $week.extraTemp7.min.raw, "units": "$week.extraTemp7.min.format(" ").lstrip()", "at": "$week.extraTemp7.mintime"},
+        "max $obs.label.extraTemp7": {"value": $week.extraTemp7.max.raw, "units": "$week.extraTemp7.max.format(" ").lstrip()", "at": "$week.extraTemp7.maxtime"},
+        "min $obs.label.extraTemp7": {"value": $week.extraTemp7.min.raw, "units": "$week.extraTemp7.min.format(" ").lstrip()", "at": "$week.extraTemp7.mintime"},
         #end if
         #if $week.extraHumid7.has_data
-        "max extraHumid7": {"value": $week.extraHumid7.max.raw, "units": "$week.extraHumid7.max.format(" ").lstrip()", "at": "$week.extraHumid7.maxtime"},
-        "min extraHumid7": {"value": $week.extraHumid7.min.raw, "units": "$week.extraHumid7.min.format(" ").lstrip()", "at": "$week.extraHumid7.mintime"},
+        "max $obs.label.extraHumid7": {"value": $week.extraHumid7.max.raw, "units": "$week.extraHumid7.max.format(" ").lstrip()", "at": "$week.extraHumid7.maxtime"},
+        "min $obs.label.extraHumid7": {"value": $week.extraHumid7.min.raw, "units": "$week.extraHumid7.min.format(" ").lstrip()", "at": "$week.extraHumid7.mintime"},
         #end if
         #if $week.extraTemp8.has_data
-        "max extraTemp8": {"value": $week.extraTemp8.max.raw, "units": "$week.extraTemp8.max.format(" ").lstrip()", "at": "$week.extraTemp8.maxtime"},
-        "min extraTemp8": {"value": $week.extraTemp8.min.raw, "units": "$week.extraTemp8.min.format(" ").lstrip()", "at": "$week.extraTemp8.mintime"},
+        "max $obs.label.extraTemp8": {"value": $week.extraTemp8.max.raw, "units": "$week.extraTemp8.max.format(" ").lstrip()", "at": "$week.extraTemp8.maxtime"},
+        "min $obs.label.extraTemp8": {"value": $week.extraTemp8.min.raw, "units": "$week.extraTemp8.min.format(" ").lstrip()", "at": "$week.extraTemp8.mintime"},
         #end if
         #if $week.extraHumid8.has_data
-        "max extraHumid8": {"value": $week.extraHumid8.max.raw, "units": "$week.extraHumid8.max.format(" ").lstrip()", "at": "$week.extraHumid8.maxtime"},
-        "min extraHumid8": {"value": $week.extraHumid8.min.raw, "units": "$week.extraHumid8.min.format(" ").lstrip()", "at": "$week.extraHumid8.mintime"},
+        "max $obs.label.extraHumid8": {"value": $week.extraHumid8.max.raw, "units": "$week.extraHumid8.max.format(" ").lstrip()", "at": "$week.extraHumid8.maxtime"},
+        "min $obs.label.extraHumid8": {"value": $week.extraHumid8.min.raw, "units": "$week.extraHumid8.min.format(" ").lstrip()", "at": "$week.extraHumid8.mintime"},
         #end if
         ## Last value can't end with a comma
         "void_end": null
@@ -354,68 +354,68 @@
         "min inside humidity": {"value": $month.inHumidity.min.raw, "units": "$month.inHumidity.min.format(" ").lstrip()", "at": "$month.inHumidity.mintime"},
         #end if
         #if $month.extraTemp1.has_data
-        "max extraTemp1": {"value": $month.extraTemp1.max.raw, "units": "$month.extraTemp1.max.format(" ").lstrip()", "at": "$month.extraTemp1.maxtime"},
-        "min extraTemp1": {"value": $month.extraTemp1.min.raw, "units": "$month.extraTemp1.min.format(" ").lstrip()", "at": "$month.extraTemp1.mintime"},
+        "max $obs.label.extraTemp1": {"value": $month.extraTemp1.max.raw, "units": "$month.extraTemp1.max.format(" ").lstrip()", "at": "$month.extraTemp1.maxtime"},
+        "min $obs.label.extraTemp1": {"value": $month.extraTemp1.min.raw, "units": "$month.extraTemp1.min.format(" ").lstrip()", "at": "$month.extraTemp1.mintime"},
         #end if
         #if $month.extraHumid1.has_data
-        "max extraHumid1": {"value": $month.extraHumid1.max.raw, "units": "$month.extraHumid1.max.format(" ").lstrip()", "at": "$month.extraHumid1.maxtime"},
-        "min extraHumid1": {"value": $month.extraHumid1.min.raw, "units": "$month.extraHumid1.min.format(" ").lstrip()", "at": "$month.extraHumid1.mintime"},
+        "max $obs.label.extraHumid1": {"value": $month.extraHumid1.max.raw, "units": "$month.extraHumid1.max.format(" ").lstrip()", "at": "$month.extraHumid1.maxtime"},
+        "min $obs.label.extraHumid1": {"value": $month.extraHumid1.min.raw, "units": "$month.extraHumid1.min.format(" ").lstrip()", "at": "$month.extraHumid1.mintime"},
         #end if
         #if $month.extraTemp2.has_data
-        "max extraTemp2": {"value": $month.extraTemp2.max.raw, "units": "$month.extraTemp2.max.format(" ").lstrip()", "at": "$month.extraTemp2.maxtime"},
-        "min extraTemp2": {"value": $month.extraTemp2.min.raw, "units": "$month.extraTemp2.min.format(" ").lstrip()", "at": "$month.extraTemp2.mintime"},
+        "max $obs.label.extraTemp2": {"value": $month.extraTemp2.max.raw, "units": "$month.extraTemp2.max.format(" ").lstrip()", "at": "$month.extraTemp2.maxtime"},
+        "min $obs.label.extraTemp2": {"value": $month.extraTemp2.min.raw, "units": "$month.extraTemp2.min.format(" ").lstrip()", "at": "$month.extraTemp2.mintime"},
         #end if
         #if $month.extraHumid2.has_data
-        "max extraHumid2": {"value": $month.extraHumid2.max.raw, "units": "$month.extraHumid2.max.format(" ").lstrip()", "at": "$month.extraHumid2.maxtime"},
-        "min extraHumid2": {"value": $month.extraHumid2.min.raw, "units": "$month.extraHumid2.min.format(" ").lstrip()", "at": "$month.extraHumid2.mintime"},
+        "max $obs.label.extraHumid2": {"value": $month.extraHumid2.max.raw, "units": "$month.extraHumid2.max.format(" ").lstrip()", "at": "$month.extraHumid2.maxtime"},
+        "min $obs.label.extraHumid2": {"value": $month.extraHumid2.min.raw, "units": "$month.extraHumid2.min.format(" ").lstrip()", "at": "$month.extraHumid2.mintime"},
         #end if
         #if $month.extraTemp3.has_data
-        "max extraTemp3": {"value": $month.extraTemp3.max.raw, "units": "$month.extraTemp3.max.format(" ").lstrip()", "at": "$month.extraTemp3.maxtime"},
-        "min extraTemp3": {"value": $month.extraTemp3.min.raw, "units": "$month.extraTemp3.min.format(" ").lstrip()", "at": "$month.extraTemp3.mintime"},
+        "max $obs.label.extraTemp3": {"value": $month.extraTemp3.max.raw, "units": "$month.extraTemp3.max.format(" ").lstrip()", "at": "$month.extraTemp3.maxtime"},
+        "min $obs.label.extraTemp3": {"value": $month.extraTemp3.min.raw, "units": "$month.extraTemp3.min.format(" ").lstrip()", "at": "$month.extraTemp3.mintime"},
         #end if
         #if $month.extraHumid3.has_data
-        "max extraHumid3": {"value": $month.extraHumid3.max.raw, "units": "$month.extraHumid3.max.format(" ").lstrip()", "at": "$month.extraHumid3.maxtime"},
-        "min extraHumid3": {"value": $month.extraHumid3.min.raw, "units": "$month.extraHumid3.min.format(" ").lstrip()", "at": "$month.extraHumid3.mintime"},
+        "max $obs.label.extraHumid3": {"value": $month.extraHumid3.max.raw, "units": "$month.extraHumid3.max.format(" ").lstrip()", "at": "$month.extraHumid3.maxtime"},
+        "min $obs.label.extraHumid3": {"value": $month.extraHumid3.min.raw, "units": "$month.extraHumid3.min.format(" ").lstrip()", "at": "$month.extraHumid3.mintime"},
         #end if
         #if $month.extraTemp4.has_data
-        "max extraTemp4": {"value": $month.extraTemp4.max.raw, "units": "$month.extraTemp4.max.format(" ").lstrip()", "at": "$month.extraTemp4.maxtime"},
-        "min extraTemp4": {"value": $month.extraTemp4.min.raw, "units": "$month.extraTemp4.min.format(" ").lstrip()", "at": "$month.extraTemp4.mintime"},
+        "max $obs.label.extraTemp4": {"value": $month.extraTemp4.max.raw, "units": "$month.extraTemp4.max.format(" ").lstrip()", "at": "$month.extraTemp4.maxtime"},
+        "min $obs.label.extraTemp4": {"value": $month.extraTemp4.min.raw, "units": "$month.extraTemp4.min.format(" ").lstrip()", "at": "$month.extraTemp4.mintime"},
         #end if
         #if $month.extraHumid4.has_data
-        "max extraHumid4": {"value": $month.extraHumid4.max.raw, "units": "$month.extraHumid4.max.format(" ").lstrip()", "at": "$month.extraHumid4.maxtime"},
-        "min extraHumid4": {"value": $month.extraHumid4.min.raw, "units": "$month.extraHumid4.min.format(" ").lstrip()", "at": "$month.extraHumid4.mintime"},
+        "max $obs.label.extraHumid4": {"value": $month.extraHumid4.max.raw, "units": "$month.extraHumid4.max.format(" ").lstrip()", "at": "$month.extraHumid4.maxtime"},
+        "min $obs.label.extraHumid4": {"value": $month.extraHumid4.min.raw, "units": "$month.extraHumid4.min.format(" ").lstrip()", "at": "$month.extraHumid4.mintime"},
         #end if
         #if $month.extraTemp5.has_data
-        "max extraTemp5": {"value": $month.extraTemp5.max.raw, "units": "$month.extraTemp5.max.format(" ").lstrip()", "at": "$month.extraTemp5.maxtime"},
-        "min extraTemp5": {"value": $month.extraTemp5.min.raw, "units": "$month.extraTemp5.min.format(" ").lstrip()", "at": "$month.extraTemp5.mintime"},
+        "max $obs.label.extraTemp5": {"value": $month.extraTemp5.max.raw, "units": "$month.extraTemp5.max.format(" ").lstrip()", "at": "$month.extraTemp5.maxtime"},
+        "min $obs.label.extraTemp5": {"value": $month.extraTemp5.min.raw, "units": "$month.extraTemp5.min.format(" ").lstrip()", "at": "$month.extraTemp5.mintime"},
         #end if
         #if $month.extraHumid5.has_data
-        "max extraHumid5": {"value": $month.extraHumid5.max.raw, "units": "$month.extraHumid5.max.format(" ").lstrip()", "at": "$month.extraHumid5.maxtime"},
-        "min extraHumid5": {"value": $month.extraHumid5.min.raw, "units": "$month.extraHumid5.min.format(" ").lstrip()", "at": "$month.extraHumid5.mintime"},
+        "max $obs.label.extraHumid5": {"value": $month.extraHumid5.max.raw, "units": "$month.extraHumid5.max.format(" ").lstrip()", "at": "$month.extraHumid5.maxtime"},
+        "min $obs.label.extraHumid5": {"value": $month.extraHumid5.min.raw, "units": "$month.extraHumid5.min.format(" ").lstrip()", "at": "$month.extraHumid5.mintime"},
         #end if
         #if $month.extraTemp6.has_data
-        "max extraTemp6": {"value": $month.extraTemp6.max.raw, "units": "$month.extraTemp6.max.format(" ").lstrip()", "at": "$month.extraTemp6.maxtime"},
-        "min extraTemp6": {"value": $month.extraTemp6.min.raw, "units": "$month.extraTemp6.min.format(" ").lstrip()", "at": "$month.extraTemp6.mintime"},
+        "max $obs.label.extraTemp6": {"value": $month.extraTemp6.max.raw, "units": "$month.extraTemp6.max.format(" ").lstrip()", "at": "$month.extraTemp6.maxtime"},
+        "min $obs.label.extraTemp6": {"value": $month.extraTemp6.min.raw, "units": "$month.extraTemp6.min.format(" ").lstrip()", "at": "$month.extraTemp6.mintime"},
         #end if
         #if $month.extraHumid6.has_data
-        "max extraHumid6": {"value": $month.extraHumid6.max.raw, "units": "$month.extraHumid6.max.format(" ").lstrip()", "at": "$month.extraHumid6.maxtime"},
-        "min extraHumid6": {"value": $month.extraHumid6.min.raw, "units": "$month.extraHumid6.min.format(" ").lstrip()", "at": "$month.extraHumid6.mintime"},
+        "max $obs.label.extraHumid6": {"value": $month.extraHumid6.max.raw, "units": "$month.extraHumid6.max.format(" ").lstrip()", "at": "$month.extraHumid6.maxtime"},
+        "min $obs.label.extraHumid6": {"value": $month.extraHumid6.min.raw, "units": "$month.extraHumid6.min.format(" ").lstrip()", "at": "$month.extraHumid6.mintime"},
         #end if
         #if $month.extraTemp7.has_data
-        "max extraTemp7": {"value": $month.extraTemp7.max.raw, "units": "$month.extraTemp7.max.format(" ").lstrip()", "at": "$month.extraTemp7.maxtime"},
-        "min extraTemp7": {"value": $month.extraTemp7.min.raw, "units": "$month.extraTemp7.min.format(" ").lstrip()", "at": "$month.extraTemp7.mintime"},
+        "max $obs.label.extraTemp7": {"value": $month.extraTemp7.max.raw, "units": "$month.extraTemp7.max.format(" ").lstrip()", "at": "$month.extraTemp7.maxtime"},
+        "min $obs.label.extraTemp7": {"value": $month.extraTemp7.min.raw, "units": "$month.extraTemp7.min.format(" ").lstrip()", "at": "$month.extraTemp7.mintime"},
         #end if
         #if $month.extraHumid7.has_data
-        "max extraHumid7": {"value": $month.extraHumid7.max.raw, "units": "$month.extraHumid7.max.format(" ").lstrip()", "at": "$month.extraHumid7.maxtime"},
-        "min extraHumid7": {"value": $month.extraHumid7.min.raw, "units": "$month.extraHumid7.min.format(" ").lstrip()", "at": "$month.extraHumid7.mintime"},
+        "max $obs.label.extraHumid7": {"value": $month.extraHumid7.max.raw, "units": "$month.extraHumid7.max.format(" ").lstrip()", "at": "$month.extraHumid7.maxtime"},
+        "min $obs.label.extraHumid7": {"value": $month.extraHumid7.min.raw, "units": "$month.extraHumid7.min.format(" ").lstrip()", "at": "$month.extraHumid7.mintime"},
         #end if
         #if $month.extraTemp8.has_data
-        "max extraTemp8": {"value": $month.extraTemp8.max.raw, "units": "$month.extraTemp8.max.format(" ").lstrip()", "at": "$month.extraTemp8.maxtime"},
-        "min extraTemp8": {"value": $month.extraTemp8.min.raw, "units": "$month.extraTemp8.min.format(" ").lstrip()", "at": "$month.extraTemp8.mintime"},
+        "max $obs.label.extraTemp8": {"value": $month.extraTemp8.max.raw, "units": "$month.extraTemp8.max.format(" ").lstrip()", "at": "$month.extraTemp8.maxtime"},
+        "min $obs.label.extraTemp8": {"value": $month.extraTemp8.min.raw, "units": "$month.extraTemp8.min.format(" ").lstrip()", "at": "$month.extraTemp8.mintime"},
         #end if
         #if $month.extraHumid8.has_data
-        "max extraHumid8": {"value": $month.extraHumid8.max.raw, "units": "$month.extraHumid8.max.format(" ").lstrip()", "at": "$month.extraHumid8.maxtime"},
-        "min extraHumid8": {"value": $month.extraHumid8.min.raw, "units": "$month.extraHumid8.min.format(" ").lstrip()", "at": "$month.extraHumid8.mintime"},
+        "max $obs.label.extraHumid8": {"value": $month.extraHumid8.max.raw, "units": "$month.extraHumid8.max.format(" ").lstrip()", "at": "$month.extraHumid8.maxtime"},
+        "min $obs.label.extraHumid8": {"value": $month.extraHumid8.min.raw, "units": "$month.extraHumid8.min.format(" ").lstrip()", "at": "$month.extraHumid8.mintime"},
         #end if
         ## Last value can't end with a comma
         "void_end": null
@@ -459,68 +459,68 @@
         "min inside humidity": {"value": $year.inHumidity.min.raw, "units": "$year.inHumidity.min.format(" ").lstrip()", "at": "$year.inHumidity.mintime"},
         #end if
         #if $year.extraTemp1.has_data
-        "max extraTemp1": {"value": $year.extraTemp1.max.raw, "units": "$year.extraTemp1.max.format(" ").lstrip()", "at": "$year.extraTemp1.maxtime"},
-        "min extraTemp1": {"value": $year.extraTemp1.min.raw, "units": "$year.extraTemp1.min.format(" ").lstrip()", "at": "$year.extraTemp1.mintime"},
+        "max $obs.label.extraTemp1": {"value": $year.extraTemp1.max.raw, "units": "$year.extraTemp1.max.format(" ").lstrip()", "at": "$year.extraTemp1.maxtime"},
+        "min $obs.label.extraTemp1": {"value": $year.extraTemp1.min.raw, "units": "$year.extraTemp1.min.format(" ").lstrip()", "at": "$year.extraTemp1.mintime"},
         #end if
         #if $year.extraHumid1.has_data
-        "max extraHumid1": {"value": $year.extraHumid1.max.raw, "units": "$year.extraHumid1.max.format(" ").lstrip()", "at": "$year.extraHumid1.maxtime"},
-        "min extraHumid1": {"value": $year.extraHumid1.min.raw, "units": "$year.extraHumid1.min.format(" ").lstrip()", "at": "$year.extraHumid1.mintime"},
+        "max $obs.label.extraHumid1": {"value": $year.extraHumid1.max.raw, "units": "$year.extraHumid1.max.format(" ").lstrip()", "at": "$year.extraHumid1.maxtime"},
+        "min $obs.label.extraHumid1": {"value": $year.extraHumid1.min.raw, "units": "$year.extraHumid1.min.format(" ").lstrip()", "at": "$year.extraHumid1.mintime"},
         #end if
         #if $year.extraTemp2.has_data
-        "max extraTemp2": {"value": $year.extraTemp2.max.raw, "units": "$year.extraTemp2.max.format(" ").lstrip()", "at": "$year.extraTemp2.maxtime"},
-        "min extraTemp2": {"value": $year.extraTemp2.min.raw, "units": "$year.extraTemp2.min.format(" ").lstrip()", "at": "$year.extraTemp2.mintime"},
+        "max $obs.label.extraTemp2": {"value": $year.extraTemp2.max.raw, "units": "$year.extraTemp2.max.format(" ").lstrip()", "at": "$year.extraTemp2.maxtime"},
+        "min $obs.label.extraTemp2": {"value": $year.extraTemp2.min.raw, "units": "$year.extraTemp2.min.format(" ").lstrip()", "at": "$year.extraTemp2.mintime"},
         #end if
         #if $year.extraHumid2.has_data
-        "max extraHumid2": {"value": $year.extraHumid2.max.raw, "units": "$year.extraHumid2.max.format(" ").lstrip()", "at": "$year.extraHumid2.maxtime"},
-        "min extraHumid2": {"value": $year.extraHumid2.min.raw, "units": "$year.extraHumid2.min.format(" ").lstrip()", "at": "$year.extraHumid2.mintime"},
+        "max $obs.label.extraHumid2": {"value": $year.extraHumid2.max.raw, "units": "$year.extraHumid2.max.format(" ").lstrip()", "at": "$year.extraHumid2.maxtime"},
+        "min $obs.label.extraHumid2": {"value": $year.extraHumid2.min.raw, "units": "$year.extraHumid2.min.format(" ").lstrip()", "at": "$year.extraHumid2.mintime"},
         #end if
         #if $year.extraTemp3.has_data
-        "max extraTemp3": {"value": $year.extraTemp3.max.raw, "units": "$year.extraTemp3.max.format(" ").lstrip()", "at": "$year.extraTemp3.maxtime"},
-        "min extraTemp3": {"value": $year.extraTemp3.min.raw, "units": "$year.extraTemp3.min.format(" ").lstrip()", "at": "$year.extraTemp3.mintime"},
+        "max $obs.label.extraTemp3": {"value": $year.extraTemp3.max.raw, "units": "$year.extraTemp3.max.format(" ").lstrip()", "at": "$year.extraTemp3.maxtime"},
+        "min $obs.label.extraTemp3": {"value": $year.extraTemp3.min.raw, "units": "$year.extraTemp3.min.format(" ").lstrip()", "at": "$year.extraTemp3.mintime"},
         #end if
         #if $year.extraHumid3.has_data
-        "max extraHumid3": {"value": $year.extraHumid3.max.raw, "units": "$year.extraHumid3.max.format(" ").lstrip()", "at": "$year.extraHumid3.maxtime"},
-        "min extraHumid3": {"value": $year.extraHumid3.min.raw, "units": "$year.extraHumid3.min.format(" ").lstrip()", "at": "$year.extraHumid3.mintime"},
+        "max $obs.label.extraHumid3": {"value": $year.extraHumid3.max.raw, "units": "$year.extraHumid3.max.format(" ").lstrip()", "at": "$year.extraHumid3.maxtime"},
+        "min $obs.label.extraHumid3": {"value": $year.extraHumid3.min.raw, "units": "$year.extraHumid3.min.format(" ").lstrip()", "at": "$year.extraHumid3.mintime"},
         #end if
         #if $year.extraTemp4.has_data
-        "max extraTemp4": {"value": $year.extraTemp4.max.raw, "units": "$year.extraTemp4.max.format(" ").lstrip()", "at": "$year.extraTemp4.maxtime"},
-        "min extraTemp4": {"value": $year.extraTemp4.min.raw, "units": "$year.extraTemp4.min.format(" ").lstrip()", "at": "$year.extraTemp4.mintime"},
+        "max $obs.label.extraTemp4": {"value": $year.extraTemp4.max.raw, "units": "$year.extraTemp4.max.format(" ").lstrip()", "at": "$year.extraTemp4.maxtime"},
+        "min $obs.label.extraTemp4": {"value": $year.extraTemp4.min.raw, "units": "$year.extraTemp4.min.format(" ").lstrip()", "at": "$year.extraTemp4.mintime"},
         #end if
         #if $year.extraHumid4.has_data
-        "max extraHumid4": {"value": $year.extraHumid4.max.raw, "units": "$year.extraHumid4.max.format(" ").lstrip()", "at": "$year.extraHumid4.maxtime"},
-        "min extraHumid4": {"value": $year.extraHumid4.min.raw, "units": "$year.extraHumid4.min.format(" ").lstrip()", "at": "$year.extraHumid4.mintime"},
+        "max $obs.label.extraHumid4": {"value": $year.extraHumid4.max.raw, "units": "$year.extraHumid4.max.format(" ").lstrip()", "at": "$year.extraHumid4.maxtime"},
+        "min $obs.label.extraHumid4": {"value": $year.extraHumid4.min.raw, "units": "$year.extraHumid4.min.format(" ").lstrip()", "at": "$year.extraHumid4.mintime"},
         #end if
         #if $year.extraTemp5.has_data
-        "max extraTemp5": {"value": $year.extraTemp5.max.raw, "units": "$year.extraTemp5.max.format(" ").lstrip()", "at": "$year.extraTemp5.maxtime"},
-        "min extraTemp5": {"value": $year.extraTemp5.min.raw, "units": "$year.extraTemp5.min.format(" ").lstrip()", "at": "$year.extraTemp5.mintime"},
+        "max $obs.label.extraTemp5": {"value": $year.extraTemp5.max.raw, "units": "$year.extraTemp5.max.format(" ").lstrip()", "at": "$year.extraTemp5.maxtime"},
+        "min $obs.label.extraTemp5": {"value": $year.extraTemp5.min.raw, "units": "$year.extraTemp5.min.format(" ").lstrip()", "at": "$year.extraTemp5.mintime"},
         #end if
         #if $year.extraHumid5.has_data
-        "max extraHumid5": {"value": $year.extraHumid5.max.raw, "units": "$year.extraHumid5.max.format(" ").lstrip()", "at": "$year.extraHumid5.maxtime"},
-        "min extraHumid5": {"value": $year.extraHumid5.min.raw, "units": "$year.extraHumid5.min.format(" ").lstrip()", "at": "$year.extraHumid5.mintime"},
+        "max $obs.label.extraHumid5": {"value": $year.extraHumid5.max.raw, "units": "$year.extraHumid5.max.format(" ").lstrip()", "at": "$year.extraHumid5.maxtime"},
+        "min $obs.label.extraHumid5": {"value": $year.extraHumid5.min.raw, "units": "$year.extraHumid5.min.format(" ").lstrip()", "at": "$year.extraHumid5.mintime"},
         #end if
         #if $year.extraTemp6.has_data
-        "max extraTemp6": {"value": $year.extraTemp6.max.raw, "units": "$year.extraTemp6.max.format(" ").lstrip()", "at": "$year.extraTemp6.maxtime"},
-        "min extraTemp6": {"value": $year.extraTemp6.min.raw, "units": "$year.extraTemp6.min.format(" ").lstrip()", "at": "$year.extraTemp6.mintime"},
+        "max $obs.label.extraTemp6": {"value": $year.extraTemp6.max.raw, "units": "$year.extraTemp6.max.format(" ").lstrip()", "at": "$year.extraTemp6.maxtime"},
+        "min $obs.label.extraTemp6": {"value": $year.extraTemp6.min.raw, "units": "$year.extraTemp6.min.format(" ").lstrip()", "at": "$year.extraTemp6.mintime"},
         #end if
         #if $year.extraHumid6.has_data
-        "max extraHumid6": {"value": $year.extraHumid6.max.raw, "units": "$year.extraHumid6.max.format(" ").lstrip()", "at": "$year.extraHumid6.maxtime"},
-        "min extraHumid6": {"value": $year.extraHumid6.min.raw, "units": "$year.extraHumid6.min.format(" ").lstrip()", "at": "$year.extraHumid6.mintime"},
+        "max $obs.label.extraHumid6": {"value": $year.extraHumid6.max.raw, "units": "$year.extraHumid6.max.format(" ").lstrip()", "at": "$year.extraHumid6.maxtime"},
+        "min $obs.label.extraHumid6": {"value": $year.extraHumid6.min.raw, "units": "$year.extraHumid6.min.format(" ").lstrip()", "at": "$year.extraHumid6.mintime"},
         #end if
         #if $year.extraTemp7.has_data
-        "max extraTemp7": {"value": $year.extraTemp7.max.raw, "units": "$year.extraTemp7.max.format(" ").lstrip()", "at": "$year.extraTemp7.maxtime"},
-        "min extraTemp7": {"value": $year.extraTemp7.min.raw, "units": "$year.extraTemp7.min.format(" ").lstrip()", "at": "$year.extraTemp7.mintime"},
+        "max $obs.label.extraTemp7": {"value": $year.extraTemp7.max.raw, "units": "$year.extraTemp7.max.format(" ").lstrip()", "at": "$year.extraTemp7.maxtime"},
+        "min $obs.label.extraTemp7": {"value": $year.extraTemp7.min.raw, "units": "$year.extraTemp7.min.format(" ").lstrip()", "at": "$year.extraTemp7.mintime"},
         #end if
         #if $year.extraHumid7.has_data
-        "max extraHumid7": {"value": $year.extraHumid7.max.raw, "units": "$year.extraHumid7.max.format(" ").lstrip()", "at": "$year.extraHumid7.maxtime"},
-        "min extraHumid7": {"value": $year.extraHumid7.min.raw, "units": "$year.extraHumid7.min.format(" ").lstrip()", "at": "$year.extraHumid7.mintime"},
+        "max $obs.label.extraHumid7": {"value": $year.extraHumid7.max.raw, "units": "$year.extraHumid7.max.format(" ").lstrip()", "at": "$year.extraHumid7.maxtime"},
+        "min $obs.label.extraHumid7": {"value": $year.extraHumid7.min.raw, "units": "$year.extraHumid7.min.format(" ").lstrip()", "at": "$year.extraHumid7.mintime"},
         #end if
         #if $year.extraTemp8.has_data
-        "max extraTemp8": {"value": $year.extraTemp8.max.raw, "units": "$year.extraTemp8.max.format(" ").lstrip()", "at": "$year.extraTemp8.maxtime"},
-        "min extraTemp8": {"value": $year.extraTemp8.min.raw, "units": "$year.extraTemp8.min.format(" ").lstrip()", "at": "$year.extraTemp8.mintime"},
+        "max $obs.label.extraTemp8": {"value": $year.extraTemp8.max.raw, "units": "$year.extraTemp8.max.format(" ").lstrip()", "at": "$year.extraTemp8.maxtime"},
+        "min $obs.label.extraTemp8": {"value": $year.extraTemp8.min.raw, "units": "$year.extraTemp8.min.format(" ").lstrip()", "at": "$year.extraTemp8.mintime"},
         #end if
         #if $year.extraHumid8.has_data
-        "max extraHumid8": {"value": $year.extraHumid8.max.raw, "units": "$year.extraHumid8.max.format(" ").lstrip()", "at": "$year.extraHumid8.maxtime"},
-        "min extraHumid8": {"value": $year.extraHumid8.min.raw, "units": "$year.extraHumid8.min.format(" ").lstrip()", "at": "$year.extraHumid8.mintime"},
+        "max $obs.label.extraHumid8": {"value": $year.extraHumid8.max.raw, "units": "$year.extraHumid8.max.format(" ").lstrip()", "at": "$year.extraHumid8.maxtime"},
+        "min $obs.label.extraHumid8": {"value": $year.extraHumid8.min.raw, "units": "$year.extraHumid8.min.format(" ").lstrip()", "at": "$year.extraHumid8.mintime"},
         #end if
         ## Last value can't end with a comma
         "void_end": null
