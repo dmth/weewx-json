@@ -16,6 +16,71 @@
         #end if
         "generator": "weewx $station.version"
     },
+    "labels":
+    {
+        #if $year.outTemp.has_data
+        "outTemp": "$obs.label.outTemp",
+        #end if
+        #if $year.outHumidity.has_data
+        "outHumidity": "$obs.label.outHumidity",
+        #end if
+        #if $year.inTemp.has_data
+        "inTemp": "$obs.label.inTemp",
+        #end if
+        #if $year.inHumidity.has_data
+        "inHumidity": "$obs.label.inHumidity",
+        #end if
+        #if $year.extraTemp1.has_data
+        "extraTemp1": "$obs.label.extraTemp1",
+        #end if
+        #if $year.extraHumid1.has_data
+        "extraHumid1": "$obs.label.extraHumid1",
+        #end if
+        #if $year.extraTemp2.has_data
+        "extraTemp2": "$obs.label.extraTemp2",
+        #end if
+        #if $year.extraHumid2.has_data
+        "extraHumid2": "$obs.label.extraHumid2",
+        #end if
+        #if $year.extraTemp3.has_data
+        "extraTemp3": "$obs.label.extraTemp3",
+        #end if
+        #if $year.extraHumid3.has_data
+        "extraHumid3": "$obs.label.extraHumid3",
+        #end if
+        #if $year.extraTemp4.has_data
+        "extraTemp4": "$obs.label.extraTemp4",
+        #end if
+        #if $year.extraHumid4.has_data
+        "extraHumid4": "$obs.label.extraHumid4",
+        #end if
+        #if $year.extraTemp5.has_data
+        "extraTemp5": "$obs.label.extraTemp5",
+        #end if
+        #if $year.extraHumid5.has_data
+        "extraHumid5": "$obs.label.extraHumid5",
+        #end if
+        #if $year.extraTemp6.has_data
+        "extraTemp6": "$obs.label.extraTemp6",
+        #end if
+        #if $year.extraHumid6.has_data
+        "extraHumid6": "$obs.label.extraHumid6",
+        #end if
+        #if $year.extraTemp7.has_data
+        "extraTemp7": "$obs.label.extraTemp7",
+        #end if
+        #if $year.extraHumid7.has_data
+        "extraHumid7": "$obs.label.extraHumid7",
+        #end if
+        #if $year.extraTemp8.has_data
+        "extraTemp8": "$obs.label.extraTemp8",
+        #end if
+        #if $year.extraHumid8.has_data
+        "extraHumid8": "$obs.label.extraHumid8",
+        #end if
+        ## Last value can't end with a comma
+        "void_end": null
+    },
     "current":
     {
         #if $current.outTemp.has_data
