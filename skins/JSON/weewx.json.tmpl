@@ -84,13 +84,13 @@
     "current":
     {
         #if $current.outTemp.has_data
-        "temperature": {"value": $current.outTemp.raw, "units": "$current.outTemp.format(" ").lstrip()"},
+        "outTemp": {"value": $current.outTemp.raw, "units": "$current.outTemp.format(" ").lstrip()"},
         #end if
         #if $current.dewpoint.has_data
         "dewpoint": {"value": $current.dewpoint.raw, "units": "$current.dewpoint.format(" ").lstrip()"},
         #end if
         #if $current.outHumidity.has_data
-        "humidity": {"value": $current.outHumidity.raw, "units": "$current.outHumidity.format(" ").lstrip()"},
+        "outHumidity": {"value": $current.outHumidity.raw, "units": "$current.outHumidity.format(" ").lstrip()"},
         #end if
         #if $current.heatindex.has_data
         "heat index": {"value": $current.heatindex.raw, "units": "$current.heatindex.format(" ").lstrip()"},
@@ -114,10 +114,10 @@
         "rain rate": {"value": $current.rainRate.raw, "units": "$current.rainRate.format(" ").lstrip()"},
         #end if
         #if $current.inTemp.has_data
-        "inside temperature": {"value": $current.inTemp.raw, "units": "$current.inTemp.format(" ").lstrip()"},
+        "inTemp": {"value": $current.inTemp.raw, "units": "$current.inTemp.format(" ").lstrip()"},
         #end if
         #if $current.inHumidity.has_data
-        "inside humidity": {"value": $current.inHumidity.raw, "units": "$current.inHumidity.format(" ").lstrip()"},
+        "inHumidity": {"value": $current.inHumidity.raw, "units": "$current.inHumidity.format(" ").lstrip()"},
         #end if
         #if $current.extraTemp1.has_data
         "extraTemp1": {"value": $current.extraTemp1.raw, "units": "$current.extraTemp1.format(" ").lstrip()"},
@@ -173,16 +173,16 @@
     "day":
     {
         #if $day.outTemp.has_data
-        "max temperature": {"value": $day.outTemp.max.raw, "units": "$day.outTemp.max.format(" ").lstrip()", "at": "$day.outTemp.maxtime"},
-        "min temperature": {"value": $day.outTemp.min.raw, "units": "$day.outTemp.min.format(" ").lstrip()", "at": "$day.outTemp.mintime"},
+        "max outTemp": {"value": $day.outTemp.max.raw, "units": "$day.outTemp.max.format(" ").lstrip()", "at": "$day.outTemp.maxtime"},
+        "min outTemp": {"value": $day.outTemp.min.raw, "units": "$day.outTemp.min.format(" ").lstrip()", "at": "$day.outTemp.mintime"},
         #end if
         #if $day.dewpoint.has_data
         "max dewpoint": {"value": $day.dewpoint.max.raw, "units": "$day.dewpoint.max.format(" ").lstrip()", "at": "$day.dewpoint.maxtime"},
         "min dewpoint": {"value": $day.dewpoint.min.raw, "units": "$day.dewpoint.min.format(" ").lstrip()", "at": "$day.dewpoint.mintime"},
         #end if
         #if $day.outHumidity.has_data
-        "max humidity": {"value": $day.outHumidity.max.raw, "units": "$day.outHumidity.max.format(" ").lstrip()", "at": "$day.outHumidity.maxtime"},
-        "min humidity": {"value": $day.outHumidity.min.raw, "units": "$day.outHumidity.min.format(" ").lstrip()", "at": "$day.outHumidity.mintime"},
+        "max outHumidity": {"value": $day.outHumidity.max.raw, "units": "$day.outHumidity.max.format(" ").lstrip()", "at": "$day.outHumidity.maxtime"},
+        "min outHumidity": {"value": $day.outHumidity.min.raw, "units": "$day.outHumidity.min.format(" ").lstrip()", "at": "$day.outHumidity.mintime"},
         #end if
         #if $day.barometer.has_data
         "max barometer": {"value": $day.barometer.max.raw, "units": "$day.barometer.max.format(" ").lstrip()", "at": "$day.barometer.maxtime"},
@@ -201,12 +201,12 @@
         "rain total": {"value": $day.rain.sum.raw, "units": "$day.rain.sum.format(" ").lstrip()"},
         #end if
         #if $day.inTemp.has_data
-        "max inside temperature": {"value": $day.inTemp.max.raw, "units": "$day.inTemp.max.format(" ").lstrip()", "at": "$day.inTemp.maxtime"},
-        "min inside temperature": {"value": $day.inTemp.min.raw, "units": "$day.inTemp.min.format(" ").lstrip()", "at": "$day.inTemp.mintime"},
+        "max inTemp": {"value": $day.inTemp.max.raw, "units": "$day.inTemp.max.format(" ").lstrip()", "at": "$day.inTemp.maxtime"},
+        "min inTemp": {"value": $day.inTemp.min.raw, "units": "$day.inTemp.min.format(" ").lstrip()", "at": "$day.inTemp.mintime"},
         #end if
         #if $day.inHumidity.has_data
-        "max inside humidity": {"value": $day.inHumidity.max.raw, "units": "$day.inHumidity.max.format(" ").lstrip()", "at": "$day.inHumidity.maxtime"},
-        "min inside humidity": {"value": $day.inHumidity.min.raw, "units": "$day.inHumidity.min.format(" ").lstrip()", "at": "$day.inHumidity.mintime"},
+        "max inHumidity": {"value": $day.inHumidity.max.raw, "units": "$day.inHumidity.max.format(" ").lstrip()", "at": "$day.inHumidity.maxtime"},
+        "min inHumidity": {"value": $day.inHumidity.min.raw, "units": "$day.inHumidity.min.format(" ").lstrip()", "at": "$day.inHumidity.mintime"},
         #end if
         #if $day.extraTemp1.has_data
         "max extraTemp1": {"value": $day.extraTemp1.max.raw, "units": "$day.extraTemp1.max.format(" ").lstrip()", "at": "$day.extraTemp1.maxtime"},
@@ -278,16 +278,16 @@
     "week":
     {
         #if $week.outTemp.has_data
-        "max temperature": {"value": $week.outTemp.max.raw, "units": "$week.outTemp.max.format(" ").lstrip()", "at": "$week.outTemp.maxtime"},
-        "min temperature": {"value": $week.outTemp.min.raw, "units": "$week.outTemp.min.format(" ").lstrip()", "at": "$week.outTemp.mintime"},
+        "max outTemp": {"value": $week.outTemp.max.raw, "units": "$week.outTemp.max.format(" ").lstrip()", "at": "$week.outTemp.maxtime"},
+        "min outTemp": {"value": $week.outTemp.min.raw, "units": "$week.outTemp.min.format(" ").lstrip()", "at": "$week.outTemp.mintime"},
         #end if
         #if $week.dewpoint.has_data
         "max dewpoint": {"value": $week.dewpoint.max.raw, "units": "$week.dewpoint.max.format(" ").lstrip()", "at": "$week.dewpoint.maxtime"},
         "min dewpoint": {"value": $week.dewpoint.min.raw, "units": "$week.dewpoint.min.format(" ").lstrip()", "at": "$week.dewpoint.mintime"},
         #end if
         #if $week.outHumidity.has_data
-        "max humidity": {"value": $week.outHumidity.max.raw, "units": "$week.outHumidity.max.format(" ").lstrip()", "at": "$week.outHumidity.maxtime"},
-        "min humidity": {"value": $week.outHumidity.min.raw, "units": "$week.outHumidity.min.format(" ").lstrip()", "at": "$week.outHumidity.mintime"},
+        "max outHumidity": {"value": $week.outHumidity.max.raw, "units": "$week.outHumidity.max.format(" ").lstrip()", "at": "$week.outHumidity.maxtime"},
+        "min outHumidity": {"value": $week.outHumidity.min.raw, "units": "$week.outHumidity.min.format(" ").lstrip()", "at": "$week.outHumidity.mintime"},
         #end if
         #if $week.barometer.has_data
         "max barometer": {"value": $week.barometer.max.raw, "units": "$week.barometer.max.format(" ").lstrip()", "at": "$week.barometer.maxtime"},
@@ -306,12 +306,12 @@
         "rain total": {"value": $week.rain.sum.raw, "units": "$week.rain.sum.format(" ").lstrip()"},
         #end if
         #if $week.inTemp.has_data
-        "max inside temperature": {"value": $week.inTemp.max.raw, "units": "$week.inTemp.max.format(" ").lstrip()", "at": "$week.inTemp.maxtime"},
-        "min inside temperature": {"value": $week.inTemp.min.raw, "units": "$week.inTemp.min.format(" ").lstrip()", "at": "$week.inTemp.mintime"},
+        "max inTemp": {"value": $week.inTemp.max.raw, "units": "$week.inTemp.max.format(" ").lstrip()", "at": "$week.inTemp.maxtime"},
+        "min inTemp": {"value": $week.inTemp.min.raw, "units": "$week.inTemp.min.format(" ").lstrip()", "at": "$week.inTemp.mintime"},
         #end if
         #if $week.inHumidity.has_data
-        "max inside humidity": {"value": $week.inHumidity.max.raw, "units": "$week.inHumidity.max.format(" ").lstrip()", "at": "$week.inHumidity.maxtime"},
-        "min inside humidity": {"value": $week.inHumidity.min.raw, "units": "$week.inHumidity.min.format(" ").lstrip()", "at": "$week.inHumidity.mintime"},
+        "max inHumidity": {"value": $week.inHumidity.max.raw, "units": "$week.inHumidity.max.format(" ").lstrip()", "at": "$week.inHumidity.maxtime"},
+        "min inHumidity": {"value": $week.inHumidity.min.raw, "units": "$week.inHumidity.min.format(" ").lstrip()", "at": "$week.inHumidity.mintime"},
         #end if
         #if $week.extraTemp1.has_data
         "max extraTemp1": {"value": $week.extraTemp1.max.raw, "units": "$week.extraTemp1.max.format(" ").lstrip()", "at": "$week.extraTemp1.maxtime"},
@@ -383,16 +383,16 @@
     "month":
     {
         #if $month.outTemp.has_data
-        "max temperature": {"value": $month.outTemp.max.raw, "units": "$month.outTemp.max.format(" ").lstrip()", "at": "$month.outTemp.maxtime"},
-        "min temperature": {"value": $month.outTemp.min.raw, "units": "$month.outTemp.min.format(" ").lstrip()", "at": "$month.outTemp.mintime"},
+        "max outTemp": {"value": $month.outTemp.max.raw, "units": "$month.outTemp.max.format(" ").lstrip()", "at": "$month.outTemp.maxtime"},
+        "min outTemp": {"value": $month.outTemp.min.raw, "units": "$month.outTemp.min.format(" ").lstrip()", "at": "$month.outTemp.mintime"},
         #end if
         #if $month.dewpoint.has_data
         "max dewpoint": {"value": $month.dewpoint.max.raw, "units": "$month.dewpoint.max.format(" ").lstrip()", "at": "$month.dewpoint.maxtime"},
         "min dewpoint": {"value": $month.dewpoint.min.raw, "units": "$month.dewpoint.min.format(" ").lstrip()", "at": "$month.dewpoint.mintime"},
         #end if
         #if $month.outHumidity.has_data
-        "max humidity": {"value": $month.outHumidity.max.raw, "units": "$month.outHumidity.max.format(" ").lstrip()", "at": "$month.outHumidity.maxtime"},
-        "min humidity": {"value": $month.outHumidity.min.raw, "units": "$month.outHumidity.min.format(" ").lstrip()", "at": "$month.outHumidity.mintime"},
+        "max outHumidity": {"value": $month.outHumidity.max.raw, "units": "$month.outHumidity.max.format(" ").lstrip()", "at": "$month.outHumidity.maxtime"},
+        "min outHumidity": {"value": $month.outHumidity.min.raw, "units": "$month.outHumidity.min.format(" ").lstrip()", "at": "$month.outHumidity.mintime"},
         #end if
         #if $month.barometer.has_data
         "max barometer": {"value": $month.barometer.max.raw, "units": "$month.barometer.max.format(" ").lstrip()", "at": "$month.barometer.maxtime"},
@@ -411,12 +411,12 @@
         "rain total": {"value": $month.rain.sum.raw, "units": "$month.rain.sum.format(" ").lstrip()"},
         #end if
         #if $month.inTemp.has_data
-        "max inside temperature": {"value": $month.inTemp.max.raw, "units": "$month.inTemp.max.format(" ").lstrip()", "at": "$month.inTemp.maxtime"},
-        "min inside temperature": {"value": $month.inTemp.min.raw, "units": "$month.inTemp.min.format(" ").lstrip()", "at": "$month.inTemp.mintime"},
+        "max inTemp": {"value": $month.inTemp.max.raw, "units": "$month.inTemp.max.format(" ").lstrip()", "at": "$month.inTemp.maxtime"},
+        "min inTemp": {"value": $month.inTemp.min.raw, "units": "$month.inTemp.min.format(" ").lstrip()", "at": "$month.inTemp.mintime"},
         #end if
         #if $month.inHumidity.has_data
-        "max inside humidity": {"value": $month.inHumidity.max.raw, "units": "$month.inHumidity.max.format(" ").lstrip()", "at": "$month.inHumidity.maxtime"},
-        "min inside humidity": {"value": $month.inHumidity.min.raw, "units": "$month.inHumidity.min.format(" ").lstrip()", "at": "$month.inHumidity.mintime"},
+        "max inHumidity": {"value": $month.inHumidity.max.raw, "units": "$month.inHumidity.max.format(" ").lstrip()", "at": "$month.inHumidity.maxtime"},
+        "min inHumidity": {"value": $month.inHumidity.min.raw, "units": "$month.inHumidity.min.format(" ").lstrip()", "at": "$month.inHumidity.mintime"},
         #end if
         #if $month.extraTemp1.has_data
         "max extraTemp1": {"value": $month.extraTemp1.max.raw, "units": "$month.extraTemp1.max.format(" ").lstrip()", "at": "$month.extraTemp1.maxtime"},
@@ -488,16 +488,16 @@
     "year":
     {
         #if $year.outTemp.has_data
-        "max temperature": {"value": $year.outTemp.max.raw, "units": "$year.outTemp.max.format(" ").lstrip()", "at": "$year.outTemp.maxtime"},
-        "min temperature": {"value": $year.outTemp.min.raw, "units": "$year.outTemp.min.format(" ").lstrip()", "at": "$year.outTemp.mintime"},
+        "max outTemp": {"value": $year.outTemp.max.raw, "units": "$year.outTemp.max.format(" ").lstrip()", "at": "$year.outTemp.maxtime"},
+        "min outTemp": {"value": $year.outTemp.min.raw, "units": "$year.outTemp.min.format(" ").lstrip()", "at": "$year.outTemp.mintime"},
         #end if
         #if $year.dewpoint.has_data
         "max dewpoint": {"value": $year.dewpoint.max.raw, "units": "$year.dewpoint.max.format(" ").lstrip()", "at": "$year.dewpoint.maxtime"},
         "min dewpoint": {"value": $year.dewpoint.min.raw, "units": "$year.dewpoint.min.format(" ").lstrip()", "at": "$year.dewpoint.mintime"},
         #end if
         #if $year.outHumidity.has_data
-        "max humidity": {"value": $year.outHumidity.max.raw, "units": "$year.outHumidity.max.format(" ").lstrip()", "at": "$year.outHumidity.maxtime"},
-        "min humidity": {"value": $year.outHumidity.min.raw, "units": "$year.outHumidity.min.format(" ").lstrip()", "at": "$year.outHumidity.mintime"},
+        "max outHumidity": {"value": $year.outHumidity.max.raw, "units": "$year.outHumidity.max.format(" ").lstrip()", "at": "$year.outHumidity.maxtime"},
+        "min outHumidity": {"value": $year.outHumidity.min.raw, "units": "$year.outHumidity.min.format(" ").lstrip()", "at": "$year.outHumidity.mintime"},
         #end if
         #if $year.barometer.has_data
         "max barometer": {"value": $year.barometer.max.raw, "units": "$year.barometer.max.format(" ").lstrip()", "at": "$year.barometer.maxtime"},
@@ -516,12 +516,12 @@
         "rain total": {"value": $year.rain.sum.raw, "units": "$year.rain.sum.format(" ").lstrip()"},
         #end if
         #if $year.inTemp.has_data
-        "max inside temperature": {"value": $year.inTemp.max.raw, "units": "$year.inTemp.max.format(" ").lstrip()", "at": "$year.inTemp.maxtime"},
-        "min inside temperature": {"value": $year.inTemp.min.raw, "units": "$year.inTemp.min.format(" ").lstrip()", "at": "$year.inTemp.mintime"},
+        "max inTemp": {"value": $year.inTemp.max.raw, "units": "$year.inTemp.max.format(" ").lstrip()", "at": "$year.inTemp.maxtime"},
+        "min inTemp": {"value": $year.inTemp.min.raw, "units": "$year.inTemp.min.format(" ").lstrip()", "at": "$year.inTemp.mintime"},
         #end if
         #if $year.inHumidity.has_data
-        "max inside humidity": {"value": $year.inHumidity.max.raw, "units": "$year.inHumidity.max.format(" ").lstrip()", "at": "$year.inHumidity.maxtime"},
-        "min inside humidity": {"value": $year.inHumidity.min.raw, "units": "$year.inHumidity.min.format(" ").lstrip()", "at": "$year.inHumidity.mintime"},
+        "max inHumidity": {"value": $year.inHumidity.max.raw, "units": "$year.inHumidity.max.format(" ").lstrip()", "at": "$year.inHumidity.maxtime"},
+        "min inHumidity": {"value": $year.inHumidity.min.raw, "units": "$year.inHumidity.min.format(" ").lstrip()", "at": "$year.inHumidity.mintime"},
         #end if
         #if $year.extraTemp1.has_data
         "max extraTemp1": {"value": $year.extraTemp1.max.raw, "units": "$year.extraTemp1.max.format(" ").lstrip()", "at": "$year.extraTemp1.maxtime"},
